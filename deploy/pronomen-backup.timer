@@ -1,0 +1,11 @@
+[Unit]
+Description=Nightly Pronomen backup
+
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=300
+Persistent=true
+Unit=pronomen-backup.service
+
+[Install]
+WantedBy=timers.target

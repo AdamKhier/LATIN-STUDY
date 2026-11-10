@@ -1,0 +1,8 @@
+[Unit]
+Description=Back up Pronomen sync data
+
+[Service]
+Type=oneshot
+User=adam
+Group=adam
+ExecStart=/home/adam/apps/latin-study/scripts/backup-sync.sh

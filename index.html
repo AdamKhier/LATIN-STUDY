@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pronomen · Latin pronoun drills</title>
+    <meta
+      name="description"
+      content="A quiz app for the Latin pronouns hic, haec, hoc; ille, illa, illud; and qui, quae, quod."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239d3d26'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23fbf7ef'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="#practice" id="brand">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span class="brand-text">
+            <strong>Pronomen</strong>
+            <small>Latin pronoun drills</small>
+          </span>
+        </a>
+        <nav class="tabs" id="tabs" role="tablist" aria-label="Sections">
+          <button class="tab is-active" data-tab="practice" role="tab" aria-selected="true">Practice</button>
+          <button class="tab" data-tab="fill" role="tab" aria-selected="false">Fill</button>
+          <button class="tab" data-tab="tables" role="tab" aria-selected="false">Tables</button>
+          <button class="tab" data-tab="progress" role="tab" aria-selected="false">Progress</button>
+        </nav>
+      </header>
+
+      <main id="view" class="view"></main>
+
+      <footer class="foot">
+        <span>hic · haec · hoc &nbsp;—&nbsp; ille · illa · illud &nbsp;—&nbsp; qui · quae · quod</span>
+        <span class="foot-note save-line">
+          <span class="save-dot" id="save-dot" aria-hidden="true"></span>
+          <span id="save-status" role="status" aria-live="polite">Saves automatically in this browser</span>
+        </span>
+      </footer>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
